@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
