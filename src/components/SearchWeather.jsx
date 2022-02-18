@@ -101,6 +101,8 @@ const Searchweather = () => {
                     <input
                       type="search"
                       className="form-control"
+                      list="datalistOptions"
+                      id="exampleDataList"
                       placeholder="Search City"
                       aria-label="Search City"
                       aria-describedby="basic-addon2"
@@ -109,10 +111,22 @@ const Searchweather = () => {
                       onChange={(e)=>setInput(e.target.value)}
                       required
                     />
+                    <datalist id="datalistOptions">
+                      <option value="Lagos"/>
+                      <option value="Abuja"/>
+                      <option value="London"/>
+                      <option value="Los Angeles"/>
+                      <option value="Paris"/>
+
+                      <option value="San Francisco"/>
+                      <option value="New York"/>
+                      <option value="Seattle"/>
+                      <option value="Chicago"/>
+                    </datalist>
                     <button type="submit" className="input-group-text" id="basic-addon2">
                       <i className="fas fa-search"></i>
                     </button>
-                    <i className="fa fa-map-marker-alt my-auto cursor-pointer p-3 text-white" aria-hidden="true" onClick={() => {
+                    <i className="fa fa-map-marker-alt my-auto cursor-pointer p-3 text-white bg-dark" role="button" aria-hidden="true" onClick={() => {
                       if (navigator.geolocation) {
                         navigator.geolocation.getCurrentPosition(myIP)
                       } else {
