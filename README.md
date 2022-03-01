@@ -8,7 +8,7 @@ Ensure that the node.js version is v16 and above
 
 Also visit https://home.openweathermap.org/api_keys and create an API key
 
-With the API key, create a .env file and paste your openweather API key
+With the API key, create a .env file and paste your openweather API key `REACT_APP_API_KEY=openweather_api_key`
 
 Proceed to run the available scripts `npm start`
 
