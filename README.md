@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation instructions and requirements
+
+Ensure that the node.js version is v16 and above
+
+Also visit https://home.openweathermap.org/api_keys and create an API key
+
+With the API key, create a .env file and paste your openweather API key
+
+Proceed to run the available scripts `npm start`
+
 ## Available Scripts
 
 In the project directory, you can run:
