@@ -10,7 +10,7 @@ const Searchweather = () => {
       const {latitude, longitude} = location.coords
       console.log(location.coords)
       // get city name using reverse geocoding
-      const geo_location = await (await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=5&appid=${API_KEY}`)).json();
+      const geo_location = await (await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=5&appid=${API_KEY}`)).json();
       console.log(geo_location)
       setSearch(`${geo_location[0]?.state}`)
       console.log(location)
