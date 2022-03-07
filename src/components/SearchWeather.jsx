@@ -37,7 +37,11 @@ const Searchweather = () => {
     }, [search]);
 
     useEffect(() => {
-      navigator.geolocation.getCurrentPosition(myIP);
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(myIP);
+      } else {
+        alert("Geolocation is not enabled/supported by this browser")
+      }
     }, []);
 
     let emoji = null;
