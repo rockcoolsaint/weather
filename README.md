@@ -12,6 +12,10 @@ With the API key, create a .env file and paste your openweather API key `REACT_A
 
 Proceed to run the available scripts `npm start`
 
+Also note that for MacBook and Apple device users, you have to enable geolocation for the location service to work on your device
+
+you can find out about enabling geolocation here https://macpaw.com/how-to/enable-disable-location-services-mac
+
 ## Available Scripts
 
 In the project directory, you can run:
